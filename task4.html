@@ -1,0 +1,61 @@
+<style>
+    .main {
+        display: flex;
+        margin:2.5%;
+        flex-direction: row;
+        box-sizing: border-box;
+        height: 92%;
+        width: 95%;
+        flex: 1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top:0;
+        border:1px solid black;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        box-sizing: border-box;
+    }
+    .leftTop {
+        border:1px solid black;
+        height: 150px;
+        width: 450px;
+        box-sizing: border-box;
+    }
+    .leftBottom {
+        border:1px solid black;
+        overflow-x:auto;
+        height:100%;
+    }
+    .right {
+        border:1px solid black;
+        width:100%;
+        min-width: 200px;
+    }
+</style>
+<div class="main">
+    <div class="left">
+        <div class="leftTop">
+            <p>
+                height: 150px<br/>
+                width:450px
+            </p>
+        </div>
+        <div class="leftBottom">
+            <p>
+                height: fill remaining vertical space<br/>
+                width:450px
+            </p>
+        </div>
+    </div>
+    <div class="right">
+        <p>
+            height: fill vertical space<br/>
+            width: fill remaining horizontal space<br/>
+            minimum width:200px<br/>
+        </p>
+    </div>
+</div>
